@@ -12,25 +12,27 @@
       margin: 0;
       padding: 0;
     }
-
     header {
-      background-color: #ffffff;
+      background-color: #007bff;
       padding: 20px;
     }
-
-    header img {
-      max-width: 250px;
-    }
-
     h1 {
-      color: #F44336;
+      color: #ffff;
       margin-top: 10px;
     }
-
+    h2 {
+      color: #020202;
+      text-align: start;
+    }
+    ul {
+      list-style-type: none;
+      text-align: start;
+    }
     .button-container {
       margin: 40px auto;
       max-width: 600px;
       display: grid;
+      text-align:center;
       grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
       gap: 15px;
     }
@@ -45,15 +47,27 @@
       font-weight: bold;
       transition: background-color 0.3s ease;
     }
-
-    a.button:hover {
-      background-color: #0056b3;
+    a.button2 {
+      display: inline-block;
+      padding: 12px 20px;
+      background-color: #005bac;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
     }
-
-    footer {
-      margin-top: 60px;
-      padding: 20px;
+    .rule {
       background-color: #ffffff;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      font-size: 14px;
       color: #333;
     }
   </style>
@@ -68,7 +82,7 @@
     target="_blank" data-expiry="2025-06-19">Class 1 (06.18.2025)
   </a>
     <a class="button" href="https://forms.office.com/Pages/ResponsePage.aspx?id=8mc6ziJauE-lEYFfiSTNpuGDaWlF28FMikUOgYQkD2pUMjhWWVJDQ0JJUVZZSkFVQVpJT1RSWk5KQS4u"
-    target="_blank" data-expiry="2025-06-25">Class 2 (06.24.2025)
+    target="_blank" data-expiry="2025-06-26">Class 2 (06.24.2025)
   </a>
     <a class="button" href="https://forms.office.com/Pages/ResponsePage.aspx?id=8mc6ziJauE-lEYFfiSTNpuGDaWlF28FMikUOgYQkD2pURTE0V1pEMEFaOTVaNzdZRUpWR0E3SlAwNi4u"
     target="_blank" data-expiry="2025-06-27">Class 3 (06.26.2025)
@@ -104,12 +118,31 @@
     target="_blank" data-expiry="2025-07-31">Class 13 (07.31.2025)
   </a>
     <a class="button" href="https://forms.office.com/Pages/ResponsePage.aspx?id=8mc6ziJauE-lEYFfiSTNpuGDaWlF28FMikUOgYQkD2pUNU5SN0dKRzZTTFJJRURNUDNMREhWNlRONS4u"
-    target="_blank" data-expiry="2025-08-05">Class 14 (08.05.2025)
+    target="_blank" data-expiry="2025-08-05">Class 14 (08.05.2025)  
   </a>
   </div>
+
+  <div class="button-container">
+    <a class="button2" href="tasks.html">Tasks & Rubrics
+    <a class="button2" href="teams.html">Teams & Coaches
+  </a>
+  </div>
+
+  </a>
+  <div class="rule">
+    <h2>📌 House Rules</h2>
+    <ul>
+      <li>Form will be available for 20 minutes, from 1:50 p.m. to 2:10 p.m.</li>
+      <li>Students must enter only the phrase between hyphens (”- -”) into the Microsoft Form. Do not include any other data.</li>
+      <li>Do not use the computer, phone or other distractors during class</li>
+      <li>Attendance is recorded via a Microsoft Form. If the Form is unavailable, the host must take manual attendance using only employee IDs.</li>
+    </ul>
+  </div>
+
   <footer>
-    ©WU Boost Academy 2025
+    Email boostacademy ← Contact Us
   </footer>
+
   <script>
         document.addEventListener("DOMContentLoaded", function() {
             var buttons = document.querySelectorAll('.button');
