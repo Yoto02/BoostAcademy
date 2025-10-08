@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Calendario de Tareas</title>
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/index.global.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+    }
+    #calendar {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    .eventoTarea1 {
+      background-color: #13b221 !important;
+      border-color: #13b221 !important;
+      color: white !important;}
+    
+    .eventoTarea2 {
+      background-color: #b14cc8 !important;
+      border-color: #b14cc8 !important;
+      color: white !important;}
+    
+    .eventoTarea3 {
+      background-color: #f4845f !important;
+      border-color: #f4845f !important;
+      color: white !important;}
+
+    .eventoClase {
+      background-color: #309ef7 !important;
+      border-color: #309ef7 !important;
+      color: white !important;
+    }
+    .eventoEntrega {
+      background-color: #e7b317 !important;
+      border-color: #e7b317 !important;
+      color: white !important;
+    }
+
+    .back-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;}
+  </style>
+</head>
+<body>
+  <h2>📅 Calendario de Tareas - Boost Academy</h2>
+  <div id="calendar"></div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var calendarEl = document.getElementById('calendar');
+      var calendar = new FullCalendar.Calendar(calendarEl, {
+        initialView: 'dayGridMonth',
+        locale: 'es',
+        headerToolbar: {
+          left: 'prev,next today',
+          center: 'title',
+          right: 'dayGridMonth,timeGridWeek'
+        },
+        events: [{'title': 'Kick off', 'start': '2025-10-21', 'end': '2025-10-22',className:'eventoClase'},
+        {'title': 'Time Management', 'start': '2025-10-23', 'end': '2025-10-24',className:'eventoClase'},
+        {'title': 'Task 1: Strengthening Communication in Customer-Focused Organizations', 'start': '2025-10-23', 'end': '2025-10-31',className:'eventoTarea1'},
+        {'title': 'Task 1 due date 4PM', 'start': '2025-11-03', 'end': '2025-11-04',className:'eventoEntrega'},
+        {'title': 'Time Management', 'start': '2025-10-28', 'end': '2025-10-29',className:'eventoClase'},
+        {'title': 'Time Management', 'start': '2025-10-30', 'end': '2025-10-31',className:'eventoClase'},
+        {'title': 'Time Management', 'start': '2025-11-04', 'end': '2025-11-05',className:'eventoClase'},
+        {'title': 'Task 2: Managing Time and Priorities', 'start': '2025-11-04', 'end': '2025-11-21',className:'eventoTarea2'},
+        {'title': 'High impact Communication', 'start': '2025-11-06', 'end': '2025-11-07',className:'eventoClase'},
+        {'title': 'High impact Communication', 'start': '2025-11-11', 'end': '2025-11-12',className:'eventoClase'},
+        {'title': 'Project Management', 'start': '2025-11-13', 'end': '2025-11-14',className:'eventoClase'},
+        {'title': 'Customer Centricity', 'start': '2025-11-18', 'end': '2025-11-19',className:'eventoClase'},
+        {'title': 'Customer Centricity', 'start': '2025-11-20', 'end': '2025-11-21',className:'eventoClase'},
+        {'title': 'Task 2 due date 4PM', 'start': '2025-11-24', 'end': '2025-11-25',className:'eventoEntrega'},
+        {'title': 'Customer Centricity', 'start': '2025-11-25', 'end': '2025-11-26',className:'eventoClase'},
+        {'title': 'Task 3: Presentation', 'start': '2025-11-25', 'end': '2025-12-03',className:'eventoTarea3'},
+        {'title': 'Task 3 Presentation', 'start': '2025-12-03', 'end': '2025-11-25',className:'eventoEntrega'},
+        {'title': 'Conflict Resolution', 'start': '2025-11-27', 'end': '2025-11-28',className:'eventoClase'},
+        {'title': 'Conflict Resolution', 'start': '2025-12-02', 'end': '2025-12-03',className:'eventoClase'},
+        {'title': 'Strategic Thinking', 'start': '2025-12-04', 'end': '2025-12-05',className:'eventoClase'},
+        {'title': 'Graduation', 'start': '2025-12-09', 'end': '2025-12-10',className:'eventoClase'},
+      ]
+      });
+      calendar.render();
+    });
+  </script>
+</br>
+<a href="index.html" class="back-btn">← Return to Main Page</a>
+
+</body>
+</html>
