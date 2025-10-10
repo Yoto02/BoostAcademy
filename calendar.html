@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>📅Homework Calendar - Boost Academy📅</title>
@@ -9,8 +9,10 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      margin: 40px;
+      margin: 20px;
+      background-color: #f9f9f9;
     }
+    
     header {
       background-color: #007bff;
       padding: 20px;
@@ -57,9 +59,17 @@
       color: white;
       text-decoration: none;
       border-radius: 5px;}
+      
+      .container {
+    max-width: 960px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
   </style>
 </head>
-<body>
+<body><div class="container">
  <header>
     <h1>📅Homework Calendar - Boost Academy📅</h1>
   </header>
@@ -77,29 +87,29 @@
         },
         events: [{'title': 'Kick off', 'start': '2025-10-21', 'end': '2025-10-22',className:'eventoClase'},
         {'title': 'Time Management', 'start': '2025-10-23', 'end': '2025-10-24',className:'eventoClase'},
-          {'title': 'Task 1: Strengthening Communication in Customer-Focused Organizations', 'start': '2025-10-23', 'end': '2025-10-25',className:'eventoTarea1'},
-          {'title': 'Task 1: Strengthening Communication in Customer-Focused Organizations', 'start': '2025-10-27', 'end': '2025-11-01',className:'eventoTarea1'},
-        {'title': 'Task 1 due date 4PM', 'start': '2025-11-03', 'end': '2025-11-04',className:'eventoEntrega'},
+          {'title': '📄Task 1: Strengthening Communication in Customer-Focused Organizations', 'start': '2025-10-23', 'end': '2025-10-25',className:'eventoTarea1'},
+          {'title': '📄Task 1: Strengthening Communication in Customer-Focused Organizations', 'start': '2025-10-27', 'end': '2025-11-01',className:'eventoTarea1'},
+        {'title': '📅Task 1 due date 4PM', 'start': '2025-11-03', 'end': '2025-11-04',className:'eventoEntrega'},
         {'title': 'Time Management', 'start': '2025-10-28', 'end': '2025-10-29',className:'eventoClase'},
         {'title': 'Time Management', 'start': '2025-10-30', 'end': '2025-10-31',className:'eventoClase'},
         {'title': 'Time Management', 'start': '2025-11-04', 'end': '2025-11-05',className:'eventoClase'},
-          {'title': 'Task 2: Managing Time and Priorities', 'start': '2025-11-04', 'end': '2025-11-08',className:'eventoTarea2'},
-          {'title': 'Task 2: Managing Time and Priorities', 'start': '2025-11-10', 'end': '2025-11-15',className:'eventoTarea2'},
-          {'title': 'Task 2: Managing Time and Priorities', 'start': '2025-11-17', 'end': '2025-11-22',className:'eventoTarea2'},
+          {'title': '📄Task 2: Managing Time and Priorities', 'start': '2025-11-04', 'end': '2025-11-08',className:'eventoTarea2'},
+          {'title': '📄Task 2: Managing Time and Priorities', 'start': '2025-11-10', 'end': '2025-11-15',className:'eventoTarea2'},
+          {'title': '📄Task 2: Managing Time and Priorities', 'start': '2025-11-17', 'end': '2025-11-22',className:'eventoTarea2'},
         {'title': 'High impact Communication', 'start': '2025-11-06', 'end': '2025-11-07',className:'eventoClase'},
         {'title': 'High impact Communication', 'start': '2025-11-11', 'end': '2025-11-12',className:'eventoClase'},
         {'title': 'Project Management', 'start': '2025-11-13', 'end': '2025-11-14',className:'eventoClase'},
         {'title': 'Customer Centricity', 'start': '2025-11-18', 'end': '2025-11-19',className:'eventoClase'},
         {'title': 'Customer Centricity', 'start': '2025-11-20', 'end': '2025-11-21',className:'eventoClase'},
-        {'title': 'Task 2 due date 4PM', 'start': '2025-11-24', 'end': '2025-11-25',className:'eventoEntrega'},
+        {'title': '📅Task 2 due date 4PM', 'start': '2025-11-24', 'end': '2025-11-25',className:'eventoEntrega'},
         {'title': 'Customer Centricity', 'start': '2025-11-25', 'end': '2025-11-26',className:'eventoClase'},
-          {'title': 'Task 3: Presentation', 'start': '2025-11-25', 'end': '2025-11-29',className:'eventoTarea3'},
-          {'title': 'Task 3: Presentation', 'start': '2025-12-01', 'end': '2025-12-03',className:'eventoTarea3'},
-        {'title': 'Task 3 Presentation', 'start': '2025-12-03', 'end': '2025-11-25',className:'eventoEntrega'},
+          {'title': '📄Task 3: Presentation', 'start': '2025-11-25', 'end': '2025-11-29',className:'eventoTarea3'},
+          {'title': '📄Task 3: Presentation', 'start': '2025-12-01', 'end': '2025-12-03',className:'eventoTarea3'},
+        {'title': '📅Task 3 Presentation', 'start': '2025-12-03', 'end': '2025-11-25',className:'eventoEntrega'},
         {'title': 'Conflict Resolution', 'start': '2025-11-27', 'end': '2025-11-28',className:'eventoClase'},
         {'title': 'Conflict Resolution', 'start': '2025-12-02', 'end': '2025-12-03',className:'eventoClase'},
         {'title': 'Strategic Thinking', 'start': '2025-12-04', 'end': '2025-12-05',className:'eventoClase'},
-        {'title': 'Graduation', 'start': '2025-12-09', 'end': '2025-12-10',className:'eventoClase'},
+        {'title': '🎓Graduation🎓', 'start': '2025-12-09', 'end': '2025-12-10',className:'eventoClase'},
       ]
       });
       calendar.render();
@@ -107,7 +117,8 @@
   </script>
 </br>
 <a href="index.html" class="back-btn">← Return to Main Page</a>
+<br>
+<br>
 <a class="back-btn" href="tasks.html">← Tasks & Rubrics
-
-</body>
+</div></body>
 </html>
